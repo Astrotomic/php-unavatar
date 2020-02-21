@@ -96,7 +96,7 @@ class Unavatar
     public function toImg(array $attr = []): string
     {
         $attr = array_merge([
-            'alt' => implode(' ', array_filter([$this->identifier.'\'s', $this->provider, 'avatar']))
+            'alt' => implode(' ', array_filter([$this->identifier.'\'s', $this->provider, 'avatar'])),
         ], $attr);
 
         $attr['src'] = $this->toUrl();

@@ -17,7 +17,7 @@ final class UnavatarTest extends TestCase
 
         static::assertSame($expected, $unavatar->toUrl());
         static::assertSame($expected, $unavatar->__toString());
-        static::assertSame($expected, (string)$unavatar);
+        static::assertSame($expected, (string) $unavatar);
     }
 
     /**
@@ -94,7 +94,7 @@ final class UnavatarTest extends TestCase
 
     public function provideUnavatarProviders(): array
     {
-        return array_filter($this->provideUnavatarInputs(), fn($data) => $data[1] !== null);
+        return array_filter($this->provideUnavatarInputs(), fn ($data) => $data[1] !== null);
     }
 
     public function provideUnavatarInputs(): array
