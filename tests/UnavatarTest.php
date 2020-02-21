@@ -109,6 +109,7 @@ final class UnavatarTest extends TestCase
             ['dev.gummibeer', Unavatar::PROVIDER_INSTAGRAM, 'https://unavatar.now.sh/instagram/dev.gummibeer'],
             ['devgummibeer', Unavatar::PROVIDER_TWITTER, 'https://unavatar.now.sh/twitter/devgummibeer'],
             ['gummibeer', Unavatar::PROVIDER_TELEGRAM, 'https://unavatar.now.sh/telegram/gummibeer'],
+            ['xXx', Unavatar::PROVIDER_YOUTUBE, 'https://unavatar.now.sh/youtube/xXx'],
             ['tkwitkowski', Unavatar::PROVIDER_SOUNDCLOUD, 'https://unavatar.now.sh/soundcloud/tkwitkowski'],
             ['xXx', Unavatar::PROVIDER_CLEARBIT, 'https://unavatar.now.sh/clearbit/xXx'],
             ['xXx', Unavatar::PROVIDER_DEVIANTART, 'https://unavatar.now.sh/deviantart/xXx'],

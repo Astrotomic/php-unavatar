@@ -10,6 +10,7 @@ class Unavatar
     public const PROVIDER_INSTAGRAM = 'instagram';
     public const PROVIDER_TWITTER = 'twitter';
     public const PROVIDER_TELEGRAM = 'telegram';
+    public const PROVIDER_YOUTUBE = 'youtube';
     public const PROVIDER_SOUNDCLOUD = 'soundcloud';
     public const PROVIDER_CLEARBIT = 'clearbit';
     public const PROVIDER_DEVIANTART = 'deviantart';
@@ -63,6 +64,11 @@ class Unavatar
     public static function telegram(string $identifier): self
     {
         return new static($identifier, self::PROVIDER_TELEGRAM);
+    }
+
+    public static function youtube(string $identifier): self
+    {
+        return new static($identifier, self::PROVIDER_YOUTUBE);
     }
 
     public static function soundcloud(string $identifier): self
