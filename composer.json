@@ -6,23 +6,24 @@
         "unavatar",
         "avatar"
     ],
+    "homepage": "https://astrotomic.info",
     "license": "MIT",
-  "homepage": "https://astrotomic.info",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Tom Witkowski",
-      "email": "gummibeer@astrotomic.info",
-      "homepage": "https://gummibeer.de",
-      "role": "Developer"
-    }
-  ],
-
+    "authors": [
+        {
+            "name": "Tom Witkowski",
+            "email": "gummibeer@astrotomic.info",
+            "homepage": "https://gummibeer.de",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0"
+    },
+    "config": {
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
@@ -38,12 +39,9 @@
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
-    "config": {
-        "sort-packages": true
-    },
-  "support": {
-    "email": "dev@astrotomic.info",
-    "issues": "https://github.com/Astrotomic/php-unavatar/issues",
-    "source": "https://github.com/Astrotomic/php-unavatar"
-  }
+    "support": {
+        "email": "dev@astrotomic.info",
+        "issues": "https://github.com/Astrotomic/php-unavatar/issues",
+        "source": "https://github.com/Astrotomic/php-unavatar"
+    }
 }
