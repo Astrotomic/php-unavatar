@@ -1,5 +1,3 @@
-
-
 # PHP Unavatar
 
 [![Latest Version](http://img.shields.io/packagist/v/astrotomic/php-unavatar.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/astrotomic/php-unavatar)
