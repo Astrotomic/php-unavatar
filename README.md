@@ -62,16 +62,16 @@ $unavatar->toImg(['loading' => 'lazy']);
 ```
 
 ```html
-<img 
-    alt="email@example.com's avatar"
-    loading="lazy" 
-    src="https://unavatar.now.sh/email%40example.com/?fallback=https%3A%2F%2Fexample.com%2Fimage.jpg" 
+<img
+  alt="email@example.com's avatar"
+  loading="lazy"
+  src="https://unavatar.now.sh/email%40example.com/?fallback=https%3A%2F%2Fexample.com%2Fimage.jpg"
 />
 ```
 
 ### Testing
 
-``` bash
+```bash
 composer test
 ```
 
