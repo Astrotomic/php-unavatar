@@ -4,16 +4,19 @@ namespace Astrotomic\Unavatar;
 
 class Unavatar
 {
-    public const PROVIDER_GITHUB = 'github';
-    public const PROVIDER_FACEBOOK = 'facebook';
-    public const PROVIDER_GRAVATAR = 'gravatar';
-    public const PROVIDER_INSTAGRAM = 'instagram';
-    public const PROVIDER_TWITTER = 'twitter';
-    public const PROVIDER_TELEGRAM = 'telegram';
-    public const PROVIDER_YOUTUBE = 'youtube';
-    public const PROVIDER_SOUNDCLOUD = 'soundcloud';
     public const PROVIDER_CLEARBIT = 'clearbit';
     public const PROVIDER_DEVIANTART = 'deviantart';
+    public const PROVIDER_DRIBBBLE = 'dribbble';
+    public const PROVIDER_DUCKDUCKGO = 'duckduckgo';
+    public const PROVIDER_FACEBOOK = 'facebook';
+    public const PROVIDER_GITHUB = 'github';
+    public const PROVIDER_GRAVATAR = 'gravatar';
+    public const PROVIDER_INSTAGRAM = 'instagram';
+    public const PROVIDER_SOUNDCLOUD = 'soundcloud';
+    public const PROVIDER_SUBSTACK = 'substack';
+    public const PROVIDER_TELEGRAM = 'telegram';
+    public const PROVIDER_TWITTER = 'twitter';
+    public const PROVIDER_YOUTUBE = 'youtube';
 
     protected const BASE_URL = 'https://unavatar.now.sh';
 
@@ -84,6 +87,21 @@ class Unavatar
     public static function deviantart(string $identifier): self
     {
         return new static($identifier, self::PROVIDER_DEVIANTART);
+    }
+
+    public static function dribbble(string $identifier): self
+    {
+        return new static($identifier, self::PROVIDER_DRIBBBLE);
+    }
+
+    public static function duckduckgo(string $identifier): self
+    {
+        return new static($identifier, self::PROVIDER_DUCKDUCKGO);
+    }
+
+    public static function substack(string $identifier): self
+    {
+        return new static($identifier, self::PROVIDER_SUBSTACK);
     }
 
     public function __construct(string $identifier, ?string $provider = null)
