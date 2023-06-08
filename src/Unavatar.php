@@ -137,7 +137,7 @@ class Unavatar
             static::BASE_URL,
             $this->provider,
             urlencode($this->identifier),
-            ($this->fallback === null ? '' : '?fallback='.urlencode($this->fallback)),
+            $this->fallback === null ? '' : '?fallback='.urlencode($this->fallback),
         ]));
     }
 

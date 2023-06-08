@@ -9,6 +9,7 @@ final class UnavatarTest extends TestCase
 {
     /**
      * @test
+     *
      * @dataProvider provideUnavatarInputs
      */
     public function it_generates_unavatar_url(string $identifier, ?string $provider, string $expected): void
@@ -22,6 +23,7 @@ final class UnavatarTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider provideUnavatarInputs
      */
     public function it_generates_unavatar_img_tag(string $identifier, ?string $provider, string $expected): void
@@ -37,6 +39,7 @@ final class UnavatarTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider provideUnavatarInputs
      */
     public function it_can_apply_fallback_image(string $identifier, ?string $provider, string $expected): void
@@ -59,6 +62,7 @@ final class UnavatarTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider provideUnavatarProviders
      */
     public function it_can_use_provider_helpers(string $identifier, ?string $provider, string $expected): void
