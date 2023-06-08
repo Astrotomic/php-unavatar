@@ -18,7 +18,7 @@ class Unavatar
     public const PROVIDER_TWITTER = 'twitter';
     public const PROVIDER_YOUTUBE = 'youtube';
 
-    protected const BASE_URL = 'https://unavatar.now.sh';
+    protected const BASE_URL = 'https://unavatar.io';
 
     protected string $identifier;
     protected ?string $provider = null;
